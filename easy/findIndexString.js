@@ -22,3 +22,12 @@ function strStr(h, n) {
 }
 
 console.log(strStr(haystack, needle));
+
+//otra opcion mas corta
+
+function strStr1(haystack, needle) {
+  return haystack.indexOf(needle);
+}
+
+console.log(strStr1("sadbutsad", "sad")); // → 0
+console.log(strStr1("leetcode", "leeto")); // → -1
