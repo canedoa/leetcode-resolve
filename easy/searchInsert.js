@@ -24,6 +24,6 @@ function searchInsert(nums, target) {
       return i;
     }
   }
-  return nums.length;
+  return nums.length; //en caso de no encontrar el target devuelve la cantidad de indice
 }
 console.log(searchInsert(nums, target));
