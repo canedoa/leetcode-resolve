@@ -13,6 +13,8 @@
 // Al incrementar en uno, se obtiene 123 + 1 = 124.
 // Por lo tanto, el resultado debería ser [1,2,4].
 
+//sin usar el bigint:
+
 // const digits = [1, 2, 4];
 
 // function plusOne(digits) {
@@ -25,7 +27,9 @@
 // console.log(plusOne(digits)); // [1, 2, 5]
 
 function plusOne(digits) {
+  //convertimos el array a string
   let numStr = digits.join("");
+  //volvemos a convertir el string a numero y le aumentamos 1
   let incremented = BigInt(numStr) + 1n;
   return incremented.toString().split("").map(Number);
 }
